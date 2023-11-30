@@ -1,0 +1,105 @@
+.sign-in-page-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-gray-white);
+}
+.sign-in-page-container1 {
+  top: 267px;
+  left: 241px;
+  width: 725px;
+  height: 220px;
+  display: flex;
+  position: absolute;
+  align-self: stretch;
+  align-items: center;
+  margin-right: 5px;
+  justify-content: center;
+}
+.sign-in-page-textinput {
+  top: 4px;
+  left: 223px;
+  position: absolute;
+}
+.sign-in-page-textinput1 {
+  top: 86px;
+  left: 221px;
+  position: absolute;
+}
+.sign-in-page-navlink {
+  top: -55px;
+  left: 285px;
+  color: rgb(37, 39, 228);
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+.sign-in-page-button {
+  top: 91px;
+  color: var(--dl-color-gray-white);
+  right: 141px;
+  position: absolute;
+  font-size: 0.75rem;
+  transition: 0.3s;
+  background-color: var(--dl-color-gray-black);
+}
+.sign-in-page-button:hover {
+  color: var(--dl-color-gray-black);
+  background-color: transparent;
+}
+.sign-in-page-text {
+  top: -99px;
+  right: 332px;
+  position: absolute;
+  font-size: 22px;
+}
+.sign-in-page-container2 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sign-in-page-navlink1 {
+  top: 23px;
+  left: 73px;
+  position: absolute;
+  font-size: 22px;
+  text-decoration: none;
+}
+.sign-in-page-login {
+  top: 24px;
+  right: 147px;
+  position: absolute;
+  border-width: 0px;
+  text-decoration: none;
+}
+.sign-in-page-login1 {
+  top: 24px;
+  right: 48px;
+  position: absolute;
+  border-width: 0px;
+  text-decoration: none;
+}
+.sign-in-page-login2 {
+  top: 24px;
+  right: 243.7890625px;
+  position: absolute;
+  border-width: 0px;
+  text-decoration: none;
+}
+@media (max-width: 479px) {
+  .sign-in-page-button {
+    margin-top: var(--dl-space-space-unit);
+    margin-left: 0px;
+  }
+}

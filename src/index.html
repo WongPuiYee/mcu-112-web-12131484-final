@@ -1,13 +1,3830 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Mcu112Web12131484Final</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+{
+  "name": "Stable Admirable Moose",
+  "globals": {
+    "settings": {
+      "title": "Stable Admirable Moose",
+      "language": "en"
+    },
+    "assets": [
+      {
+        "type": "style",
+        "attrs": {
+          "data-tag": {
+            "type": "static",
+            "content": "reset-style-sheet"
+          }
+        },
+        "content": "html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type=\"button\"],[type=\"reset\"],[type=\"submit\"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type=\"button\"]::-moz-focus-inner,[type=\"reset\"]::-moz-focus-inner,[type=\"submit\"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type=\"button\"]:-moz-focus,[type=\"reset\"]:-moz-focus,[type=\"submit\"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }"
+      },
+      {
+        "type": "style",
+        "attrs": {
+          "data-tag": {
+            "type": "static",
+            "content": "default-style-sheet"
+          }
+        },
+        "content": "\n  html {\n    font-family: Inter;\n    font-size: 16px;\n  }\n\n  body {\n    font-weight: 400;\n    font-style:normal;\n    text-decoration: none;\n    text-transform: none;\n    letter-spacing: normal;\n    line-height: 1.15;\n    color: var(--dl-color-gray-black);\n    background-color: var(--dl-color-gray-white);\n    \n  }\n\n  \n\n  "
+      },
+      {
+        "type": "font",
+        "path": "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap",
+        "attrs": {
+          "data-tag": {
+            "type": "static",
+            "content": "font"
+          }
+        }
+      }
+    ],
+    "meta": [
+      {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1.0"
+      },
+      {
+        "charSet": "utf-8"
+      },
+      {
+        "property": "twitter:card",
+        "content": "summary_large_image"
+      }
+    ],
+    "customCode": {
+      "head": "",
+      "body": ""
+    }
+  },
+  "root": {
+    "name": "App",
+    "designLanguage": {
+      "tokens": {
+        "--dl-size-size-large": {
+          "type": "static",
+          "content": "144px"
+        },
+        "--dl-color-gray-900": {
+          "type": "static",
+          "content": "#D9D9D9"
+        },
+        "--dl-color-danger-300": {
+          "type": "static",
+          "content": "#A22020"
+        },
+        "--dl-radius-radius-radius2": {
+          "type": "static",
+          "content": "2px"
+        },
+        "--dl-color-danger-500": {
+          "type": "static",
+          "content": "#BF2626"
+        },
+        "--dl-radius-radius-radius4": {
+          "type": "static",
+          "content": "4px"
+        },
+        "--dl-color-gray-white": {
+          "type": "static",
+          "content": "#FFFFFF"
+        },
+        "--dl-space-space-fiveunits": {
+          "type": "static",
+          "content": "80px"
+        },
+        "--dl-space-space-threeunits": {
+          "type": "static",
+          "content": "48px"
+        },
+        "--dl-color-success-300": {
+          "type": "static",
+          "content": "#199033"
+        },
+        "--dl-size-size-maxwidth": {
+          "type": "static",
+          "content": "1400px"
+        },
+        "--dl-size-size-medium": {
+          "type": "static",
+          "content": "96px"
+        },
+        "--dl-size-size-xlarge": {
+          "type": "static",
+          "content": "192px"
+        },
+        "--dl-size-size-xsmall": {
+          "type": "static",
+          "content": "16px"
+        },
+        "--dl-size-size-small": {
+          "type": "static",
+          "content": "48px"
+        },
+        "--dl-space-space-twounits": {
+          "type": "static",
+          "content": "32px"
+        },
+        "--dl-space-space-sixunits": {
+          "type": "static",
+          "content": "96px"
+        },
+        "--dl-color-danger-700": {
+          "type": "static",
+          "content": "#E14747"
+        },
+        "--dl-color-primary-100": {
+          "type": "static",
+          "content": "#003EB3"
+        },
+        "--dl-color-gray-700": {
+          "type": "static",
+          "content": "#999999"
+        },
+        "--dl-radius-radius-radius8": {
+          "type": "static",
+          "content": "8px"
+        },
+        "--dl-color-primary-500": {
+          "type": "static",
+          "content": "#14A9FF"
+        },
+        "--dl-space-space-fourunits": {
+          "type": "static",
+          "content": "64px"
+        },
+        "--dl-color-primary-f5f5f5": {
+          "type": "static",
+          "content": "#f5f5f5ff"
+        },
+        "--dl-color-primary-700": {
+          "type": "static",
+          "content": "#85DCFF"
+        },
+        "--dl-size-size-xxlarge": {
+          "type": "static",
+          "content": "288px"
+        },
+        "--dl-color-gray-500": {
+          "type": "static",
+          "content": "#595959"
+        },
+        "--dl-color-gray-black": {
+          "type": "static",
+          "content": "#000000"
+        },
+        "--dl-space-space-oneandhalfunits": {
+          "type": "static",
+          "content": "24px"
+        },
+        "--dl-radius-radius-round": {
+          "type": "static",
+          "content": "50%"
+        },
+        "--dl-color-success-700": {
+          "type": "static",
+          "content": "#4CC366"
+        },
+        "--dl-space-space-unit": {
+          "type": "static",
+          "content": "16px"
+        },
+        "--dl-color-success-500": {
+          "type": "static",
+          "content": "#32A94C"
+        },
+        "--dl-space-space-halfunit": {
+          "type": "static",
+          "content": "8px"
+        }
+      }
+    },
+    "styleSetDefinitions": {
+      "button": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "color": {
+            "type": "static",
+            "content": "#1c1c1c"
+          },
+          "display": {
+            "type": "static",
+            "content": "inline"
+          },
+          "padding": {
+            "type": "static",
+            "content": "0.5rem 1rem"
+          },
+          "borderColor": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-black",
+              "fallback": ""
+            }
+          },
+          "borderWidth": {
+            "type": "static",
+            "content": "1px"
+          },
+          "borderRadius": {
+            "type": "static",
+            "content": "4px"
+          },
+          "backgroundColor": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-white",
+              "fallback": ""
+            }
+          }
+        },
+        "conditions": []
+      },
+      "input": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "color": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-black",
+              "fallback": ""
+            }
+          },
+          "cursor": {
+            "type": "static",
+            "content": "auto"
+          },
+          "padding": {
+            "type": "static",
+            "content": "0.5rem 1rem"
+          },
+          "borderColor": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-black",
+              "fallback": ""
+            }
+          },
+          "borderWidth": {
+            "type": "static",
+            "content": "1px"
+          },
+          "borderRadius": {
+            "type": "static",
+            "content": "4px"
+          },
+          "backgroundColor": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-white",
+              "fallback": ""
+            }
+          }
+        },
+        "conditions": []
+      },
+      "textarea": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "color": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-black",
+              "fallback": ""
+            }
+          },
+          "cursor": {
+            "type": "static",
+            "content": "auto"
+          },
+          "padding": {
+            "type": "static",
+            "content": "0.5rem"
+          },
+          "borderColor": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-black",
+              "fallback": ""
+            }
+          },
+          "borderWidth": {
+            "type": "static",
+            "content": "1px"
+          },
+          "borderRadius": {
+            "type": "static",
+            "content": "4px"
+          },
+          "backgroundColor": {
+            "type": "dynamic",
+            "content": {
+              "referenceType": "token",
+              "id": "--dl-color-gray-white",
+              "fallback": ""
+            }
+          }
+        },
+        "conditions": []
+      },
+      "list": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "width": {
+            "type": "static",
+            "content": "100%"
+          },
+          "margin": {
+            "type": "static",
+            "content": "1em 0px 1em 0px"
+          },
+          "display": {
+            "type": "static",
+            "content": "block"
+          },
+          "padding": {
+            "type": "static",
+            "content": "0px 0px 0px 1.5rem"
+          },
+          "listStyleType": {
+            "type": "static",
+            "content": "none"
+          },
+          "listStylePosition": {
+            "type": "static",
+            "content": "outside"
+          }
+        },
+        "conditions": []
+      },
+      "list-item": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "display": {
+            "type": "static",
+            "content": "list-item"
+          }
+        },
+        "conditions": []
+      },
+      "teleport-show": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "display": {
+            "type": "static",
+            "content": "flex !important"
+          },
+          "transform": {
+            "type": "static",
+            "content": "none !important"
+          }
+        },
+        "conditions": []
+      },
+      "Heading": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "fontSize": {
+            "type": "static",
+            "content": "32px"
+          },
+          "fontFamily": {
+            "type": "static",
+            "content": "Inter"
+          },
+          "fontWeight": {
+            "type": "static",
+            "content": "700"
+          },
+          "lineHeight": {
+            "type": "static",
+            "content": "1.15"
+          },
+          "textTransform": {
+            "type": "static",
+            "content": "none"
+          },
+          "textDecoration": {
+            "type": "static",
+            "content": "none"
+          }
+        }
+      },
+      "Content": {
+        "type": "reusable-project-style-map",
+        "content": {
+          "fontSize": {
+            "type": "static",
+            "content": "16px"
+          },
+          "fontFamily": {
+            "type": "static",
+            "content": "Inter"
+          },
+          "fontWeight": {
+            "type": "static",
+            "content": "400"
+          },
+          "lineHeight": {
+            "type": "static",
+            "content": "1.15"
+          },
+          "textTransform": {
+            "type": "static",
+            "content": "none"
+          },
+          "textDecoration": {
+            "type": "static",
+            "content": "none"
+          }
+        }
+      }
+    },
+    "stateDefinitions": {
+      "route": {
+        "type": "string",
+        "defaultValue": "Home",
+        "values": [
+          {
+            "value": "Home",
+            "seo": {
+              "title": "Stable Admirable Moose",
+              "metaTags": [
+                {
+                  "property": "og:title",
+                  "content": "Stable Admirable Moose"
+                }
+              ]
+            },
+            "pageOptions": {
+              "stateDefinitions": {},
+              "propDefinitions": {}
+            }
+          },
+          {
+            "value": "sign-up-page",
+            "seo": {
+              "title": "sign-up-page - Stable Admirable Moose",
+              "metaTags": [
+                {
+                  "property": "og:title",
+                  "content": "sign-up-page - Stable Admirable Moose"
+                }
+              ]
+            },
+            "pageOptions": {
+              "stateDefinitions": {},
+              "propDefinitions": {}
+            }
+          },
+          {
+            "value": "sign-in-page",
+            "seo": {
+              "title": "sign-in-page - Stable Admirable Moose",
+              "metaTags": [
+                {
+                  "property": "og:title",
+                  "content": "sign-in-page - Stable Admirable Moose"
+                }
+              ]
+            },
+            "pageOptions": {
+              "stateDefinitions": {},
+              "propDefinitions": {}
+            }
+          },
+          {
+            "value": "404 - Not Found",
+            "seo": {
+              "title": "404 - Not Found"
+            },
+            "pageOptions": {
+              "fallback": true
+            }
+          }
+        ]
+      }
+    },
+    "propDefinitions": {},
+    "node": {
+      "type": "element",
+      "content": {
+        "elementType": "Router",
+        "children": [
+          {
+            "type": "conditional",
+            "content": {
+              "node": {
+                "type": "element",
+                "content": {
+                  "elementType": "container",
+                  "semanticType": "div",
+                  "referencedStyles": {},
+                  "abilities": {},
+                  "style": {
+                    "width": {
+                      "type": "static",
+                      "content": "100%"
+                    },
+                    "minHeight": {
+                      "type": "static",
+                      "content": "100vh"
+                    },
+                    "overflow": {
+                      "type": "static",
+                      "content": "auto"
+                    },
+                    "display": {
+                      "type": "static",
+                      "content": "flex"
+                    },
+                    "flexDirection": {
+                      "type": "static",
+                      "content": "column"
+                    },
+                    "alignItems": {
+                      "type": "static",
+                      "content": "center"
+                    },
+                    "justifyContent": {
+                      "type": "static",
+                      "content": "center"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "text",
+                        "semanticType": "h3",
+                        "referencedStyles": {},
+                        "abilities": {},
+                        "children": [
+                          {
+                            "type": "static",
+                            "content": "OOPS! PAGE NOT FOUND"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "container",
+                        "semanticType": "div",
+                        "referencedStyles": {},
+                        "abilities": {},
+                        "style": {
+                          "display": {
+                            "type": "static",
+                            "content": "flex"
+                          },
+                          "flexDirection": {
+                            "type": "static",
+                            "content": "column"
+                          },
+                          "justifyContent": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "alignItems": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "relative"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "h1",
+                              "referencedStyles": {},
+                              "abilities": {},
+                              "style": {
+                                "fontWeight": {
+                                  "type": "static",
+                                  "content": "900"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "252px"
+                                },
+                                "letterSpacing": {
+                                  "type": "static",
+                                  "content": "-20px"
+                                },
+                                "color": {
+                                  "type": "static",
+                                  "content": "rgb(38, 38, 38)"
+                                },
+                                "marginTop": {
+                                  "type": "static",
+                                  "content": "-20px"
+                                },
+                                "marginBottom": {
+                                  "type": "static",
+                                  "content": "-20px"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "404"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "container",
+                        "semanticType": "div",
+                        "referencedStyles": {},
+                        "abilities": {},
+                        "style": {
+                          "display": {
+                            "type": "static",
+                            "content": "flex"
+                          },
+                          "flexDirection": {
+                            "type": "static",
+                            "content": "column"
+                          },
+                          "justifyContent": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "alignItems": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "width": {
+                            "type": "static",
+                            "content": "421px"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "h2",
+                              "referencedStyles": {},
+                              "abilities": {},
+                              "style": {
+                                "textAlign": {
+                                  "type": "static",
+                                  "content": "center"
+                                },
+                                "fontWeight": {
+                                  "type": "static",
+                                  "content": "400"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "value": "404 - Not Found",
+              "reference": {
+                "type": "dynamic",
+                "content": {
+                  "referenceType": "state",
+                  "id": "route"
+                }
+              }
+            }
+          },
+          {
+            "type": "conditional",
+            "content": {
+              "node": {
+                "type": "element",
+                "content": {
+                  "elementType": "container",
+                  "semanticType": "div",
+                  "referencedStyles": {
+                    "6f63c2cb-e536-4d3f-8e1a-dd01437c25c0": {
+                      "type": "style-map",
+                      "content": {
+                        "conditions": [
+                          {
+                            "maxWidth": 479,
+                            "conditionType": "screen-size"
+                          }
+                        ],
+                        "mapType": "inlined",
+                        "styles": {
+                          "backgroundColor": {
+                            "type": "static",
+                            "content": "#D9D9D9"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "abilities": {},
+                  "style": {
+                    "width": {
+                      "type": "static",
+                      "content": "100%"
+                    },
+                    "display": {
+                      "type": "static",
+                      "content": "flex"
+                    },
+                    "overflow": {
+                      "type": "static",
+                      "content": "auto"
+                    },
+                    "minHeight": {
+                      "type": "static",
+                      "content": "100vh"
+                    },
+                    "textAlign": {
+                      "type": "static",
+                      "content": "center"
+                    },
+                    "alignItems": {
+                      "type": "static",
+                      "content": "center"
+                    },
+                    "flexDirection": {
+                      "type": "static",
+                      "content": "column"
+                    },
+                    "justifyContent": {
+                      "type": "static",
+                      "content": "center"
+                    },
+                    "backgroundColor": {
+                      "type": "dynamic",
+                      "content": {
+                        "referenceType": "token",
+                        "id": "--dl-color-gray-white",
+                        "fallback": ""
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "container",
+                        "semanticType": "div",
+                        "referencedStyles": {},
+                        "abilities": {},
+                        "style": {
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "left": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "top": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "width": {
+                            "type": "static",
+                            "content": "100%"
+                          },
+                          "height": {
+                            "type": "static",
+                            "content": "100px"
+                          },
+                          "display": {
+                            "type": "static",
+                            "content": "flex"
+                          },
+                          "flexDirection": {
+                            "type": "static",
+                            "content": "column"
+                          },
+                          "justifyContent": {
+                            "type": "static",
+                            "content": "flex-start"
+                          },
+                          "alignItems": {
+                            "type": "static",
+                            "content": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {},
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "Home"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "23px"
+                                },
+                                "left": {
+                                  "type": "static",
+                                  "content": "73px"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "22px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Conduit"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "button",
+                              "name": "Login",
+                              "referencedStyles": {
+                                "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                                  "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "button"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "sign-in-page"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "borderWidth": {
+                                  "type": "static",
+                                  "content": "0px"
+                                },
+                                "top": {
+                                  "type": "static",
+                                  "content": "24px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "147px"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Sign In\n"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "button",
+                              "name": "Login",
+                              "referencedStyles": {
+                                "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                                  "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "button"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "sign-up-page"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "borderWidth": {
+                                  "type": "static",
+                                  "content": "0px"
+                                },
+                                "top": {
+                                  "type": "static",
+                                  "content": "24px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "48px"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Sign Up"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "button",
+                              "name": "Login",
+                              "referencedStyles": {
+                                "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                                  "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "button"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "Home"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "borderWidth": {
+                                  "type": "static",
+                                  "content": "0px"
+                                },
+                                "top": {
+                                  "type": "static",
+                                  "content": "24px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "243.7890625px"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Home"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "container",
+                        "semanticType": "div",
+                        "name": "Banner",
+                        "referencedStyles": {
+                          "b93e3721-732b-42d5-80ac-cdce94500f3a": {
+                            "type": "style-map",
+                            "content": {
+                              "conditions": [
+                                {
+                                  "conditionType": "screen-size",
+                                  "maxWidth": 479
+                                }
+                              ],
+                              "mapType": "inlined",
+                              "styles": {
+                                "paddingTop": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-space-space-twounits",
+                                    "fallback": ""
+                                  }
+                                },
+                                "paddingLeft": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-space-space-unit",
+                                    "fallback": ""
+                                  }
+                                },
+                                "paddingRight": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-space-space-unit",
+                                    "fallback": ""
+                                  }
+                                },
+                                "paddingBottom": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-space-space-twounits",
+                                    "fallback": ""
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "4848bd57-9e99-41ad-a1ca-6d17af3f46c4": {
+                            "type": "style-map",
+                            "content": {
+                              "conditions": [
+                                {
+                                  "conditionType": "screen-size",
+                                  "maxWidth": 767
+                                }
+                              ],
+                              "mapType": "inlined",
+                              "styles": {
+                                "paddingLeft": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-space-space-twounits",
+                                    "fallback": ""
+                                  }
+                                },
+                                "paddingRight": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-space-space-twounits",
+                                    "fallback": ""
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "abilities": {},
+                        "style": {
+                          "width": {
+                            "type": "static",
+                            "content": "100%"
+                          },
+                          "display": {
+                            "type": "static",
+                            "content": "flex"
+                          },
+                          "padding": {
+                            "type": "dynamic",
+                            "content": {
+                              "referenceType": "token",
+                              "id": "--dl-space-space-threeunits",
+                              "fallback": ""
+                            }
+                          },
+                          "alignItems": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "flexDirection": {
+                            "type": "static",
+                            "content": "column"
+                          },
+                          "justifyContent": {
+                            "type": "static",
+                            "content": "space-between"
+                          },
+                          "top": {
+                            "type": "static",
+                            "content": "91px"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "right": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "backgroundColor": {
+                            "type": "dynamic",
+                            "content": {
+                              "referenceType": "token",
+                              "id": "--dl-color-success-700",
+                              "fallback": ""
+                            }
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "h1",
+                              "referencedStyles": {},
+                              "abilities": {},
+                              "style": {
+                                "textAlign": {
+                                  "type": "static",
+                                  "content": "center"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "3rem"
+                                },
+                                "color": {
+                                  "type": "static",
+                                  "content": "rgb(243, 233, 233)"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "element",
+                                  "content": {
+                                    "elementType": "text",
+                                    "semanticType": "span",
+                                    "referencedStyles": {},
+                                    "abilities": {},
+                                    "children": [
+                                      {
+                                        "type": "static",
+                                        "content": "Conduit"
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "element",
+                                  "content": {
+                                    "elementType": "text",
+                                    "semanticType": "br",
+                                    "referencedStyles": {},
+                                    "abilities": {},
+                                    "children": []
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {},
+                              "abilities": {},
+                              "style": {
+                                "color": {
+                                  "type": "static",
+                                  "content": "#ffffff"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "21px"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "A place to share your Angular knowledge. "
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "value": "Home",
+              "reference": {
+                "type": "dynamic",
+                "content": {
+                  "referenceType": "state",
+                  "id": "route"
+                }
+              },
+              "importDefinitions": {}
+            }
+          },
+          {
+            "type": "conditional",
+            "content": {
+              "node": {
+                "type": "element",
+                "content": {
+                  "elementType": "container",
+                  "semanticType": "div",
+                  "referencedStyles": {},
+                  "abilities": {},
+                  "style": {
+                    "width": {
+                      "type": "static",
+                      "content": "100%"
+                    },
+                    "display": {
+                      "type": "static",
+                      "content": "flex"
+                    },
+                    "overflow": {
+                      "type": "static",
+                      "content": "auto"
+                    },
+                    "minHeight": {
+                      "type": "static",
+                      "content": "100vh"
+                    },
+                    "alignItems": {
+                      "type": "static",
+                      "content": "center"
+                    },
+                    "flexDirection": {
+                      "type": "static",
+                      "content": "column"
+                    },
+                    "justifyContent": {
+                      "type": "static",
+                      "content": "flex-start"
+                    },
+                    "backgroundColor": {
+                      "type": "dynamic",
+                      "content": {
+                        "referenceType": "token",
+                        "id": "--dl-color-gray-white",
+                        "fallback": ""
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "text",
+                        "semanticType": "span",
+                        "referencedStyles": {},
+                        "abilities": {
+                          "link": {
+                            "type": "navlink",
+                            "content": {
+                              "routeName": "Home"
+                            }
+                          }
+                        },
+                        "style": {
+                          "top": {
+                            "type": "static",
+                            "content": "33px"
+                          },
+                          "left": {
+                            "type": "static",
+                            "content": "67px"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "textDecoration": {
+                            "type": "static",
+                            "content": "none"
+                          },
+                          "fontSize": {
+                            "type": "static",
+                            "content": "22px"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "static",
+                            "content": "Conduit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "button",
+                        "referencedStyles": {
+                          "a801979b-2fa6-47ac-aa1a-a6ee7f8ac246": {
+                            "type": "style-map",
+                            "content": {
+                              "conditions": [
+                                {
+                                  "content": "hover",
+                                  "conditionType": "element-state"
+                                }
+                              ],
+                              "mapType": "inlined",
+                              "styles": {
+                                "color": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-color-gray-black",
+                                    "fallback": ""
+                                  }
+                                },
+                                "backgroundColor": {
+                                  "type": "static",
+                                  "content": "transparent"
+                                }
+                              }
+                            }
+                          },
+                          "0c0af5bc-1d61-41d7-b61e-ad87fbdb3d7b": {
+                            "type": "style-map",
+                            "content": {
+                              "conditions": [
+                                {
+                                  "maxWidth": 479,
+                                  "conditionType": "screen-size"
+                                }
+                              ],
+                              "mapType": "inlined",
+                              "styles": {
+                                "marginTop": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-space-space-unit",
+                                    "fallback": ""
+                                  }
+                                },
+                                "marginLeft": {
+                                  "type": "static",
+                                  "content": "0px"
+                                }
+                              }
+                            }
+                          },
+                          "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                            "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                            "type": "style-map",
+                            "content": {
+                              "mapType": "project-referenced",
+                              "referenceId": "button"
+                            }
+                          }
+                        },
+                        "abilities": {},
+                        "attrs": {
+                          "type": {
+                            "type": "static",
+                            "content": "submit"
+                          }
+                        },
+                        "style": {
+                          "top": {
+                            "type": "static",
+                            "content": "443px"
+                          },
+                          "left": {
+                            "type": "static",
+                            "content": "634px"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "transition": {
+                            "type": "static",
+                            "content": "0.3s"
+                          },
+                          "fontSize": {
+                            "type": "static",
+                            "content": "0.75rem"
+                          },
+                          "color": {
+                            "type": "dynamic",
+                            "content": {
+                              "referenceType": "token",
+                              "id": "--dl-color-gray-white",
+                              "fallback": ""
+                            }
+                          },
+                          "backgroundColor": {
+                            "type": "dynamic",
+                            "content": {
+                              "referenceType": "token",
+                              "id": "--dl-color-gray-black",
+                              "fallback": ""
+                            }
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "static",
+                            "content": "Sign Up"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "container",
+                        "semanticType": "div",
+                        "referencedStyles": {},
+                        "abilities": {},
+                        "style": {
+                          "top": {
+                            "type": "static",
+                            "content": "181px"
+                          },
+                          "left": {
+                            "type": "static",
+                            "content": "418px"
+                          },
+                          "width": {
+                            "type": "static",
+                            "content": "306px"
+                          },
+                          "height": {
+                            "type": "static",
+                            "content": "401px"
+                          },
+                          "display": {
+                            "type": "static",
+                            "content": "flex"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "alignItems": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "flexDirection": {
+                            "type": "static",
+                            "content": "column"
+                          },
+                          "justifyContent": {
+                            "type": "static",
+                            "content": "flex-start"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {},
+                              "abilities": {},
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "-13px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "96px"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "22px"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Sign Up "
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "textinput",
+                              "referencedStyles": {
+                                "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf": {
+                                  "id": "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "input"
+                                  }
+                                }
+                              },
+                              "abilities": {},
+                              "attrs": {
+                                "type": {
+                                  "type": "static",
+                                  "content": "text"
+                                },
+                                "placeholder": {
+                                  "type": "static",
+                                  "content": "Email"
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "127px"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "25px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                }
+                              },
+                              "children": []
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "textinput",
+                              "referencedStyles": {
+                                "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf": {
+                                  "id": "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "input"
+                                  }
+                                }
+                              },
+                              "abilities": {},
+                              "attrs": {
+                                "type": {
+                                  "type": "static",
+                                  "content": "text"
+                                },
+                                "placeholder": {
+                                  "type": "static",
+                                  "content": "Password"
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "190px"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "25px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                }
+                              },
+                              "children": []
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {
+                                "e8ea6b1c-32f3-48fc-8a7d-514684c4d749": {
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "Content"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "sign-in-page"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "18px"
+                                },
+                                "color": {
+                                  "type": "static",
+                                  "content": "rgb(37, 39, 228)"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "80px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "fontStyle": {
+                                  "type": "static",
+                                  "content": "normal"
+                                },
+                                "fontWeight": {
+                                  "type": "static",
+                                  "content": "700"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Have an Account?"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "textinput",
+                              "referencedStyles": {
+                                "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf": {
+                                  "id": "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "input"
+                                  }
+                                }
+                              },
+                              "abilities": {},
+                              "attrs": {
+                                "type": {
+                                  "type": "static",
+                                  "content": "text"
+                                },
+                                "placeholder": {
+                                  "type": "static",
+                                  "content": "Username"
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "59px"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "25px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                }
+                              },
+                              "children": []
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "button",
+                        "name": "Login",
+                        "referencedStyles": {
+                          "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                            "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                            "type": "style-map",
+                            "content": {
+                              "mapType": "project-referenced",
+                              "referenceId": "button"
+                            }
+                          }
+                        },
+                        "abilities": {
+                          "link": {
+                            "type": "navlink",
+                            "content": {
+                              "routeName": "sign-in-page"
+                            }
+                          }
+                        },
+                        "style": {
+                          "borderWidth": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "top": {
+                            "type": "static",
+                            "content": "24px"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "right": {
+                            "type": "static",
+                            "content": "147px"
+                          },
+                          "textDecoration": {
+                            "type": "static",
+                            "content": "none"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "static",
+                            "content": "Sign In\n"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "button",
+                        "name": "Login",
+                        "referencedStyles": {
+                          "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                            "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                            "type": "style-map",
+                            "content": {
+                              "mapType": "project-referenced",
+                              "referenceId": "button"
+                            }
+                          }
+                        },
+                        "abilities": {
+                          "link": {
+                            "type": "navlink",
+                            "content": {
+                              "routeName": "sign-up-page"
+                            }
+                          }
+                        },
+                        "style": {
+                          "borderWidth": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "top": {
+                            "type": "static",
+                            "content": "24px"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "right": {
+                            "type": "static",
+                            "content": "48px"
+                          },
+                          "textDecoration": {
+                            "type": "static",
+                            "content": "none"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "static",
+                            "content": "Sign Up"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "button",
+                        "name": "Login",
+                        "referencedStyles": {
+                          "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                            "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                            "type": "style-map",
+                            "content": {
+                              "mapType": "project-referenced",
+                              "referenceId": "button"
+                            }
+                          }
+                        },
+                        "abilities": {
+                          "link": {
+                            "type": "navlink",
+                            "content": {
+                              "routeName": "Home"
+                            }
+                          }
+                        },
+                        "style": {
+                          "borderWidth": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "top": {
+                            "type": "static",
+                            "content": "24px"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "right": {
+                            "type": "static",
+                            "content": "243.7890625px"
+                          },
+                          "textDecoration": {
+                            "type": "static",
+                            "content": "none"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "static",
+                            "content": "Home"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "value": "sign-up-page",
+              "reference": {
+                "type": "dynamic",
+                "content": {
+                  "referenceType": "state",
+                  "id": "route"
+                }
+              },
+              "importDefinitions": {}
+            }
+          },
+          {
+            "type": "conditional",
+            "content": {
+              "node": {
+                "type": "element",
+                "content": {
+                  "elementType": "container",
+                  "semanticType": "div",
+                  "referencedStyles": {},
+                  "abilities": {},
+                  "style": {
+                    "width": {
+                      "type": "static",
+                      "content": "100%"
+                    },
+                    "display": {
+                      "type": "static",
+                      "content": "flex"
+                    },
+                    "overflow": {
+                      "type": "static",
+                      "content": "auto"
+                    },
+                    "minHeight": {
+                      "type": "static",
+                      "content": "100vh"
+                    },
+                    "alignItems": {
+                      "type": "static",
+                      "content": "center"
+                    },
+                    "flexDirection": {
+                      "type": "static",
+                      "content": "column"
+                    },
+                    "justifyContent": {
+                      "type": "static",
+                      "content": "flex-start"
+                    },
+                    "backgroundColor": {
+                      "type": "dynamic",
+                      "content": {
+                        "referenceType": "token",
+                        "id": "--dl-color-gray-white",
+                        "fallback": ""
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "container",
+                        "semanticType": "div",
+                        "name": "Container",
+                        "referencedStyles": {},
+                        "abilities": {},
+                        "style": {
+                          "top": {
+                            "type": "static",
+                            "content": "267px"
+                          },
+                          "width": {
+                            "type": "static",
+                            "content": "725px"
+                          },
+                          "height": {
+                            "type": "static",
+                            "content": "220px"
+                          },
+                          "display": {
+                            "type": "static",
+                            "content": "flex"
+                          },
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "alignSelf": {
+                            "type": "static",
+                            "content": "stretch"
+                          },
+                          "alignItems": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "justifyContent": {
+                            "type": "static",
+                            "content": "center"
+                          },
+                          "left": {
+                            "type": "static",
+                            "content": "241px"
+                          },
+                          "marginRight": {
+                            "type": "static",
+                            "content": "5px"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "textinput",
+                              "referencedStyles": {
+                                "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf": {
+                                  "id": "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "input"
+                                  }
+                                }
+                              },
+                              "abilities": {},
+                              "attrs": {
+                                "type": {
+                                  "type": "static",
+                                  "content": "text"
+                                },
+                                "placeholder": {
+                                  "type": "static",
+                                  "content": "Username"
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "4px"
+                                },
+                                "left": {
+                                  "type": "static",
+                                  "content": "223px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                }
+                              },
+                              "children": []
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "textinput",
+                              "referencedStyles": {
+                                "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf": {
+                                  "id": "7ec9b61d-2761-427f-a9ec-2e47a27b4dbf",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "input"
+                                  }
+                                }
+                              },
+                              "abilities": {},
+                              "attrs": {
+                                "type": {
+                                  "type": "static",
+                                  "content": "text"
+                                },
+                                "placeholder": {
+                                  "type": "static",
+                                  "content": "Password"
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "86px"
+                                },
+                                "left": {
+                                  "type": "static",
+                                  "content": "221px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                }
+                              },
+                              "children": []
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {
+                                "6f321d31-7f7f-48e1-a2f6-f2e827fec66c": {
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "Content"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "sign-up-page"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "-55px"
+                                },
+                                "left": {
+                                  "type": "static",
+                                  "content": "285px"
+                                },
+                                "color": {
+                                  "type": "static",
+                                  "content": "rgb(37, 39, 228)"
+                                },
+                                "fontStyle": {
+                                  "type": "static",
+                                  "content": "normal"
+                                },
+                                "fontWeight": {
+                                  "type": "static",
+                                  "content": "700"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Need an Account?"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "button",
+                              "referencedStyles": {
+                                "75a4a6bf-dcec-4499-9a48-087ae74048c1": {
+                                  "type": "style-map",
+                                  "content": {
+                                    "conditions": [
+                                      {
+                                        "content": "hover",
+                                        "conditionType": "element-state"
+                                      }
+                                    ],
+                                    "mapType": "inlined",
+                                    "styles": {
+                                      "color": {
+                                        "type": "dynamic",
+                                        "content": {
+                                          "referenceType": "token",
+                                          "id": "--dl-color-gray-black",
+                                          "fallback": ""
+                                        }
+                                      },
+                                      "backgroundColor": {
+                                        "type": "static",
+                                        "content": "transparent"
+                                      }
+                                    }
+                                  }
+                                },
+                                "34fc7482-65a4-40c7-a6d9-15d31384b824": {
+                                  "type": "style-map",
+                                  "content": {
+                                    "conditions": [
+                                      {
+                                        "maxWidth": 479,
+                                        "conditionType": "screen-size"
+                                      }
+                                    ],
+                                    "mapType": "inlined",
+                                    "styles": {
+                                      "marginTop": {
+                                        "type": "dynamic",
+                                        "content": {
+                                          "referenceType": "token",
+                                          "id": "--dl-space-space-unit",
+                                          "fallback": ""
+                                        }
+                                      },
+                                      "marginLeft": {
+                                        "type": "static",
+                                        "content": "0px"
+                                      }
+                                    }
+                                  }
+                                },
+                                "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                                  "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "button"
+                                  }
+                                }
+                              },
+                              "abilities": {},
+                              "attrs": {
+                                "type": {
+                                  "type": "static",
+                                  "content": "submit"
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "91px"
+                                },
+                                "color": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-color-gray-white",
+                                    "fallback": ""
+                                  }
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "141px"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "0.75rem"
+                                },
+                                "transition": {
+                                  "type": "static",
+                                  "content": "0.3s"
+                                },
+                                "backgroundColor": {
+                                  "type": "dynamic",
+                                  "content": {
+                                    "referenceType": "token",
+                                    "id": "--dl-color-gray-black",
+                                    "fallback": ""
+                                  }
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Sign In"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {},
+                              "abilities": {},
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "-99px"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "22px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "332px"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Sign In "
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {},
+                              "abilities": {},
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Text"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "content": {
+                        "elementType": "container",
+                        "semanticType": "div",
+                        "referencedStyles": {},
+                        "abilities": {},
+                        "style": {
+                          "position": {
+                            "type": "static",
+                            "content": "absolute"
+                          },
+                          "left": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "top": {
+                            "type": "static",
+                            "content": "0px"
+                          },
+                          "width": {
+                            "type": "static",
+                            "content": "100%"
+                          },
+                          "height": {
+                            "type": "static",
+                            "content": "100px"
+                          },
+                          "display": {
+                            "type": "static",
+                            "content": "flex"
+                          },
+                          "flexDirection": {
+                            "type": "static",
+                            "content": "column"
+                          },
+                          "justifyContent": {
+                            "type": "static",
+                            "content": "flex-start"
+                          },
+                          "alignItems": {
+                            "type": "static",
+                            "content": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "text",
+                              "semanticType": "span",
+                              "referencedStyles": {},
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "Home"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "top": {
+                                  "type": "static",
+                                  "content": "23px"
+                                },
+                                "left": {
+                                  "type": "static",
+                                  "content": "73px"
+                                },
+                                "fontSize": {
+                                  "type": "static",
+                                  "content": "22px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Conduit"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "button",
+                              "name": "Login",
+                              "referencedStyles": {
+                                "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                                  "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "button"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "sign-in-page"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "borderWidth": {
+                                  "type": "static",
+                                  "content": "0px"
+                                },
+                                "top": {
+                                  "type": "static",
+                                  "content": "24px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "147px"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Sign In\n"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "button",
+                              "name": "Login",
+                              "referencedStyles": {
+                                "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                                  "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "button"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "sign-up-page"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "borderWidth": {
+                                  "type": "static",
+                                  "content": "0px"
+                                },
+                                "top": {
+                                  "type": "static",
+                                  "content": "24px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "48px"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Sign Up"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "element",
+                            "content": {
+                              "elementType": "button",
+                              "name": "Login",
+                              "referencedStyles": {
+                                "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36": {
+                                  "id": "9a9fdf0c-9415-4cc0-92ba-e0571bbc1a36",
+                                  "type": "style-map",
+                                  "content": {
+                                    "mapType": "project-referenced",
+                                    "referenceId": "button"
+                                  }
+                                }
+                              },
+                              "abilities": {
+                                "link": {
+                                  "type": "navlink",
+                                  "content": {
+                                    "routeName": "Home"
+                                  }
+                                }
+                              },
+                              "style": {
+                                "borderWidth": {
+                                  "type": "static",
+                                  "content": "0px"
+                                },
+                                "top": {
+                                  "type": "static",
+                                  "content": "24px"
+                                },
+                                "position": {
+                                  "type": "static",
+                                  "content": "absolute"
+                                },
+                                "right": {
+                                  "type": "static",
+                                  "content": "243.7890625px"
+                                },
+                                "textDecoration": {
+                                  "type": "static",
+                                  "content": "none"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "static",
+                                  "content": "Home"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "value": "sign-in-page",
+              "reference": {
+                "type": "dynamic",
+                "content": {
+                  "referenceType": "state",
+                  "id": "route"
+                }
+              },
+              "importDefinitions": {}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "NavigationLinks": {
+      "propDefinitions": {
+        "text1": {
+          "id": "6e5e67f8-10b1-4a63-8397-3ebec6d9e231",
+          "defaultValue": "Features",
+          "type": "string"
+        },
+        "text3": {
+          "id": "8da1d049-6a3e-4153-844d-05676b8bcffb",
+          "defaultValue": "Team",
+          "type": "string"
+        },
+        "rootClassName": {
+          "id": "a3610282-9d29-4518-85c2-b5b47b9a9fb6",
+          "defaultValue": "",
+          "type": "string"
+        },
+        "text4": {
+          "id": "a9e11ebb-b100-4ab1-98d6-ad3166d296bf",
+          "defaultValue": "Blog",
+          "type": "string"
+        },
+        "text2": {
+          "id": "ce3a9120-333e-4aa2-abbe-effe3700dcb6",
+          "defaultValue": "Pricing",
+          "type": "string"
+        },
+        "text": {
+          "id": "f2117ffd-4edb-4c41-bfb4-053e96de7783",
+          "defaultValue": "About",
+          "type": "string"
+        }
+      },
+      "stateDefinitions": {},
+      "node": {
+        "type": "element",
+        "content": {
+          "elementType": "container",
+          "semanticType": "nav",
+          "name": "Nav",
+          "referencedStyles": {
+            "2f4a08a2-f790-49da-8dd3-658cf6d92000": {
+              "type": "style-map",
+              "content": {
+                "mapType": "component-referenced",
+                "content": {
+                  "type": "dynamic",
+                  "content": {
+                    "referenceType": "prop",
+                    "id": "rootClassName"
+                  }
+                }
+              }
+            },
+            "632e4fab-f27c-4fa5-b43c-d56ba73f9315": {
+              "type": "style-map",
+              "content": {
+                "conditions": [
+                  {
+                    "maxWidth": 767,
+                    "conditionType": "screen-size"
+                  }
+                ],
+                "mapType": "inlined",
+                "styles": {
+                  "alignItems": {
+                    "type": "static",
+                    "content": "flex-start"
+                  },
+                  "flexDirection": {
+                    "type": "static",
+                    "content": "column"
+                  }
+                }
+              }
+            }
+          },
+          "abilities": {},
+          "style": {
+            "flex": {
+              "type": "static",
+              "content": "0 0 auto"
+            },
+            "display": {
+              "type": "static",
+              "content": "flex"
+            },
+            "alignItems": {
+              "type": "static",
+              "content": "center"
+            },
+            "flexDirection": {
+              "type": "static",
+              "content": "row"
+            }
+          },
+          "children": [
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "4f283aa4-b6e0-4731-b24f-607164fab13f": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "maxWidth": 767,
+                          "conditionType": "screen-size"
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "62b6df8d-06a5-47fc-9bd1-7784cf90ad9f": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "maxWidth": 767,
+                          "conditionType": "screen-size"
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text1"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "2f24e816-7425-4b18-8f7e-961ab9e11a11": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "maxWidth": 767,
+                          "conditionType": "screen-size"
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text2"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "f9ce5556-e472-4f52-b818-5f0906e73a54": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "maxWidth": 767,
+                          "conditionType": "screen-size"
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text3"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "b1fbe29b-8b9d-4f43-8631-5b798b64b224": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "maxWidth": 767,
+                          "conditionType": "screen-size"
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text4"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "name": "NavigationLinks",
+      "styleSetDefinitions": {
+        "rootClassName": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName1": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName2": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName3": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName4": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName5": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName6": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName7": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        }
+      }
+    },
+    "NavigationLinks1": {
+      "propDefinitions": {
+        "text": {
+          "id": "44da040d-a9c3-4ef4-8823-3598b43bb9ef",
+          "defaultValue": "About",
+          "type": "string"
+        },
+        "text3": {
+          "id": "e9f53ca3-5352-4a45-9c98-dae3901f0350",
+          "defaultValue": "Team",
+          "type": "string"
+        },
+        "text4": {
+          "id": "168fc4ac-df51-44be-8d18-c784735bc053",
+          "defaultValue": "Blog",
+          "type": "string"
+        },
+        "text1": {
+          "id": "5be6cf9c-0d57-4643-9349-a10adbbe5271",
+          "defaultValue": "Features",
+          "type": "string"
+        },
+        "rootClassName": {
+          "id": "9637670b-695b-4725-9f4a-8b4e26c21ea6",
+          "defaultValue": "",
+          "type": "string"
+        },
+        "text2": {
+          "id": "c8247ba3-63f0-4c96-ba53-e147b735e39f",
+          "defaultValue": "Pricing",
+          "type": "string"
+        }
+      },
+      "stateDefinitions": {},
+      "node": {
+        "type": "element",
+        "content": {
+          "elementType": "container",
+          "semanticType": "nav",
+          "name": "Nav",
+          "referencedStyles": {
+            "2f4a08a2-f790-49da-8dd3-658cf6d92000": {
+              "type": "style-map",
+              "content": {
+                "mapType": "component-referenced",
+                "content": {
+                  "type": "dynamic",
+                  "content": {
+                    "referenceType": "prop",
+                    "id": "rootClassName"
+                  }
+                }
+              }
+            },
+            "2bdad77b-e4a9-4737-ad34-0e83a11e3035": {
+              "type": "style-map",
+              "content": {
+                "conditions": [
+                  {
+                    "conditionType": "screen-size",
+                    "maxWidth": 767
+                  }
+                ],
+                "mapType": "inlined",
+                "styles": {
+                  "alignItems": {
+                    "type": "static",
+                    "content": "flex-start"
+                  },
+                  "flexDirection": {
+                    "type": "static",
+                    "content": "column"
+                  }
+                }
+              }
+            }
+          },
+          "abilities": {},
+          "style": {
+            "flex": {
+              "type": "static",
+              "content": "0 0 auto"
+            },
+            "display": {
+              "type": "static",
+              "content": "flex"
+            },
+            "alignItems": {
+              "type": "static",
+              "content": "center"
+            },
+            "flexDirection": {
+              "type": "static",
+              "content": "row"
+            }
+          },
+          "children": [
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "4eb45c05-78ea-434c-a8d8-8696d2a592ab": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "f152daf6-f415-4d1f-9a27-c18a48ffa842": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text1"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "86102cb7-fca0-4637-9891-9b35bd58e9cb": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text2"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "2d1561cb-7b33-48b8-8901-46d204aea752": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text3"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "e10a6089-6265-45c2-9887-6880dfe30f0a": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text4"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "name": "NavigationLinks1",
+      "styleSetDefinitions": {
+        "rootClassName": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName1": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName2": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName3": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName4": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName5": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName6": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName7": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        }
+      }
+    },
+    "NavigationLinks2": {
+      "propDefinitions": {
+        "text": {
+          "id": "3ae299c9-1f42-4323-9a16-7fcc146362ad",
+          "defaultValue": "About",
+          "type": "string"
+        },
+        "text3": {
+          "id": "37c72fef-7b1a-49b2-a61e-8eb961e56731",
+          "defaultValue": "Team",
+          "type": "string"
+        },
+        "text4": {
+          "id": "76bb514e-d2be-4f17-94a0-05b55730d2ce",
+          "defaultValue": "Blog",
+          "type": "string"
+        },
+        "text1": {
+          "id": "ab58ae02-500b-45e2-a1a4-6129ea9121a8",
+          "defaultValue": "Features",
+          "type": "string"
+        },
+        "rootClassName": {
+          "id": "b3bd57bb-ab59-45f5-81bc-02ffc8c54f36",
+          "defaultValue": "",
+          "type": "string"
+        },
+        "text2": {
+          "id": "45b8d92f-a736-448c-996b-228c05673fa7",
+          "defaultValue": "Pricing",
+          "type": "string"
+        }
+      },
+      "stateDefinitions": {},
+      "node": {
+        "type": "element",
+        "content": {
+          "elementType": "container",
+          "semanticType": "nav",
+          "name": "Nav",
+          "referencedStyles": {
+            "2f4a08a2-f790-49da-8dd3-658cf6d92000": {
+              "type": "style-map",
+              "content": {
+                "mapType": "component-referenced",
+                "content": {
+                  "type": "dynamic",
+                  "content": {
+                    "referenceType": "prop",
+                    "id": "rootClassName"
+                  }
+                }
+              }
+            },
+            "77a0bcc8-a150-4f12-97a2-5015e3ca6553": {
+              "type": "style-map",
+              "content": {
+                "conditions": [
+                  {
+                    "conditionType": "screen-size",
+                    "maxWidth": 767
+                  }
+                ],
+                "mapType": "inlined",
+                "styles": {
+                  "alignItems": {
+                    "type": "static",
+                    "content": "flex-start"
+                  },
+                  "flexDirection": {
+                    "type": "static",
+                    "content": "column"
+                  }
+                }
+              }
+            }
+          },
+          "abilities": {},
+          "style": {
+            "flex": {
+              "type": "static",
+              "content": "0 0 auto"
+            },
+            "display": {
+              "type": "static",
+              "content": "flex"
+            },
+            "alignItems": {
+              "type": "static",
+              "content": "center"
+            },
+            "flexDirection": {
+              "type": "static",
+              "content": "row"
+            }
+          },
+          "children": [
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "0b362075-f7d7-47b1-9542-984b8d0dc7f3": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "420e0fb8-5b60-4a1d-a439-2c65b4f14729": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text1"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "dbd5abb7-b548-4a83-92e1-81dc640a5daf": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text2"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "00e7d677-b02d-4dfd-bb7c-bc2479d26ac0": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text3"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "element",
+              "content": {
+                "elementType": "text",
+                "semanticType": "span",
+                "referencedStyles": {
+                  "be24d5b7-986c-4ca1-bfc7-cffae31e7c5a": {
+                    "type": "style-map",
+                    "content": {
+                      "conditions": [
+                        {
+                          "conditionType": "screen-size",
+                          "maxWidth": 767
+                        }
+                      ],
+                      "mapType": "inlined",
+                      "styles": {
+                        "marginLeft": {
+                          "type": "static",
+                          "content": "0"
+                        },
+                        "marginBottom": {
+                          "type": "dynamic",
+                          "content": {
+                            "referenceType": "token",
+                            "id": "--dl-space-space-unit",
+                            "fallback": ""
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "abilities": {},
+                "style": {
+                  "marginLeft": {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "token",
+                      "id": "--dl-space-space-twounits",
+                      "fallback": ""
+                    }
+                  }
+                },
+                "children": [
+                  {
+                    "type": "dynamic",
+                    "content": {
+                      "referenceType": "prop",
+                      "id": "text4"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "name": "NavigationLinks2",
+      "styleSetDefinitions": {
+        "rootClassName": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName1": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName2": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName3": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName4": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName5": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName6": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        },
+        "rootClassName7": {
+          "content": {},
+          "conditions": [],
+          "type": "reusable-component-style-override"
+        }
+      }
+    }
+  },
+  "resources": {
+    "items": {},
+    "resourceMappers": {}
+  }
+}
