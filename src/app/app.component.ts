@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { HeaderComponent } from './header/header.component';
-import { ArticleComponent } from './article/article.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
